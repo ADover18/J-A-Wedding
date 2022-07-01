@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <title>Gift Ideas</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@100;200;300;400;500;600;700;800;900;1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" defer src="js/giftRegister.js"></script>
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal__content">
+        <span class="modal__close">&times;</span>
+        <p class="modal__text modal__text--top">
+          You are about to mark the following as purchased:
+        </p>
+        <div class="modal__cards flex-group flex-group--modal"></div>
+        <p class="modal__text modal__text--last">
+          This will notify others that this (or something similar) has been
+          bought as a gift. Are you sure you wish to continue?
+        </p>
+        <button class="btn modal__btn">Confirm</button>
+      </div>
+    </div>
+    <header class="header header--gift-list">
+      <img
+        src="img/header-img.jpg"
+        alt="Illustration of Foliage"
+        class="header__img header__img--gifts"
+      />
+      <p class="header__gift-info">
+        There is no expectation to bring a gift to our wedding. We would just
+        love to see you there. If you are wanting to bring a gift and are
+        looking for ideas, here is short list of things which would be useful.
+      </p>
+      <p class="header__gift-info">
+        If you do purchase one of these items, or something similar, please
+        check the item, using the checkbox (click the box on the top left corner
+        of the item). Then click the "Mark as Purchased" button at the bottom of
+        the page. This will indicate to others that this item has already been
+        purchased as a gift.
+      </p>
+    </header>
+    <h1 class="title--main">Gift Ideas</h1>
+    <section class="flex-group flex-group--main">
+      <div class="card" id="knives">
+        <a
+          target="_blank"
+          href="https://www.amazon.co.uk/Stellar-Sabatier-Piece-Knife-Block/dp/B08KPZWHK6/ref=sr_1_5?crid=4VLF9PB0J3PQ&keywords=Stellar+Sabatier+IS61+Professional+Kitchen+Knife+Set&qid=1647550184&sprefix=stellar+sabatier+is61+professional+kitchen+knife+set%2Caps%2C528&sr=8-5"
+          class="card__info"
+        >
+          <img
+            src="img/knife-set.jpg"
+            alt="Kitchen knife set"
+            class="card__img"
+          />
+          <p class="card__text card__text--item">
+            Stellar Sabatier IS61 Professional Kitchen Knife Set
+          </p>
+          <p class="card__text card__text--shop">Amazon</p>
+        </a>
+      </div>
+      <div class="card" id="knife-sharpener">
+        <a
+          target="_blank"
+          href="https://www.amazon.co.uk/AnySharp-Knife-Sharpener-Brushed-Stainless/dp/B00V4T05YC/ref=sr_1_4?crid=1G78BO7Q8JDDO&keywords=AnySharp+Pro+Metal+World%27s+Best+Knife+Sharpener+with+Suction%2C+Brushed+Metal&qid=1648129900&s=kitchen&sprefix=anysharp+pro+metal+world+s+best+knife+sharpener+with+suction+brushed+metal%2Ckitchen%2C109&sr=1-4"
+          class="card__info"
+        >
+          <img
+            src="img/knifesharpener.jpg"
+            alt="AnySharp Pro Metal Knife Sharpener"
+            class="card__img"
+          />
+          <p class="card__text card__text--item">
+            AnySharp Pro Metal Knife Sharpener
+          </p>
+          <p class="card__text card__text--shop">Amazon</p>
+        </a>
+      </div>
+      <div class="card" id="grater">
+        <a
+          target="_blank"
+          href="https://www.amazon.co.uk/Microplane-Professional-Grater-Stainless-Steel/dp/B00009WE3Z/ref=sr_1_7?crid=3VGZRDAE8D63E&keywords=microplane%2Bgrater&qid=1648130697&s=kitchen&sprefix=microplane%2Bgrater%2Ckitchen%2C79&sr=1-7&th=1"
+          class="card__info"
+        >
+          <img
+            src="img/grater.jpg"
+            alt="Microplane Kitchen Grater - Fine"
+            class="card__img"
+          />
+          <p class="card__text card__text--item">
+            Microplane Kitchen Grater - Fine
+          </p>
+          <p class="card__text card__text--shop">Amazon</p>
+        </a>
+      </div>
+      <div class="card" id="ice-cream-scoop">
+        <a
+          target="_blank"
+          href="https://www.amazon.co.uk/OXO-Grips-Trigger-Cream-Scoop/dp/B00004OCIW/ref=sr_1_1?keywords=Best+with+Trigger%3A+OXO+Good+Grips+Trigger+Ice+Cream+Scoop&qid=1648143233&s=kitchen&sr=1-1"
+          class="card__info"
+        >
+          <img
+            src="img/icecreamscoop.jpg"
+            alt="OXO Good Grips Trigger Ice Cream Scoop"
+            class="card__img"
+          />
+          <p class="card__text card__text--item">
+            OXO Good Grips Trigger Ice Cream Scoop
+          </p>
+          <p class="card__text card__text--shop">Amazon</p>
+        </a>
+      </div>
+      <div class="card" id="whisk">
+        <a
+          target="_blank"
+          href="https://www.amazon.co.uk/KitchenCraft-MasterClass-Deluxe-Stainless-Silver/dp/B0010F9EIS/ref=sr_1_16?crid=5J84CX5EAWHY&keywords=rotary+whisk&qid=1648415715&sprefix=rotary+whisk%2Caps%2C75&sr=8-16"
+          class="card__info"
+        >
+          <img
+            src="img/whisk.jpg"
+            alt="KitchenCraft MasterClass Rotary Whisk"
+            class="card__img"
+          />
+          <p class="card__text card__text--item">
+            KitchenCraft MasterClass Rotary Whisk
+          </p>
+          <p class="card__text card__text--shop">Amazon</p>
+        </a>
+      </div>
+      <div class="card" id="quick-roasting-tin">
+        <a
+          target="_blank"
+          class="card__info"
+          href="https://www.amazon.co.uk/Quick-Roasting-Tin-Rukmini-Iyer/dp/1529110068"
+        >
+          <img
+            src="img/quickroastingtin.jpg"
+            alt="The Quick Roasting Tin: 30 Minute One Dish Dinners"
+            class="card__img"
+          />
+          <p class="card__text card__text--item">
+            The Quick Roasting Tin: 30 Minute One Dish Dinners
+          </p>
+          <p class="card__text card__text--shop">Amazon</p>
+        </a>
+      </div>
+      <div class="card" id="ice-ball-moulds">
+        <a
+          target="_blank"
+          class="card__info"
+          href="https://www.amazon.co.uk/Silicone-Non-Spill-Flexible-Whiskey-Cocktail/dp/B092279XVP/ref=sr_1_7?crid=216PPCDJUGATL&keywords=giant+ice+cube&qid=1648130495&s=kitchen&sprefix=giant+ice+cube%2Ckitchen%2C86&sr=1-7"
+        >
+          <img
+            src="img/gianticecubetray.jpg"
+            alt="Giant Silicone Ice Cube Tray"
+            class="card__img"
+          />
+          <p class="card__text card__text--item">
+            Giant Silicone Ice Cube Tray
+          </p>
+          <p class="card__text card__text--shop">Amazon</p>
+        </a>
+      </div>
+      <div class="card" id="wine-glasses">
+        <a
+          target="_blank"
+          class="card__info"
+          href="https://www.johnlewis.com/john-lewis-partners-ombre-wine-glass-set-of-4-450ml/green/p5329718"
+        >
+          <img
+            src="img/wineglasses.jpg"
+            alt="Ombre Wine Glass, Set of 4, 450ml, Colour: Green"
+            class="card__img"
+          />
+          <p class="card__text card__text--item">
+            Ombre Wine Glass, Set of 4, 450ml, Colour: Green
+          </p>
+          <p class="card__text card__text--shop">John Lewis</p>
+        </a>
+      </div>
+      <div class="card" id="jug">
+        <a
+          target="_blank"
+          class="card__info"
+          href="https://www.oliverbonas.com/homeware/gluggle-green-earthenware-jug-304343#selection.color=16&selection.size=2260&gid=319820&pid=1"
+        >
+          <img
+            src="img/jug.jpg"
+            alt="Green Ceramic Gluggle Jug Extra Large, Colour: Green"
+            class="card__img"
+          />
+          <p class="card__text card__text--item">
+            Green Ceramic Gluggle Jug Extra Large, Colour: Green
+          </p>
+          <p class="card__text card__text--shop">Oliver Bonas</p>
+        </a>
+      </div>
+      <div class="card" id="mats--1">
+        <a
+          target="_blank"
+          class="card__info"
+          href="https://www.made.com/sodahl-set-of-2-hemp-rectangular-placemats-33-x-48cm-ash"
+        >
+          <img
+            src="img/mats.jpeg"
+            alt="Södahl
+
+Set of 2 Rectangular Placemats, Colour: Ash Hemp"
+            class="card__img"
+          />
+          <p class="card__text card__text--item">
+            Södahl Set of 2 Rectangular Placemats, Colour: Ash Hemp
+          </p>
+          <p class="card__text card__text--shop">Made.com</p>
+        </a>
+      </div>
+      <div class="card" id="mats--2">
+        <a
+          target="_blank"
+          class="card__info"
+          href="https://www.made.com/sodahl-set-of-2-hemp-rectangular-placemats-33-x-48cm-ash"
+        >
+          <img
+            src="img/mats.jpeg"
+            alt="Södahl
+
+Set of 2 Rectangular Placemats, Colour: Ash Hemp"
+            class="card__img"
+          />
+          <p class="card__text card__text--item">
+            Södahl Set of 2 Rectangular Placemats, Colour: Ash Hemp
+          </p>
+          <p class="card__text card__text--shop">Made.com</p>
+        </a>
+      </div>
+      <div class="card" id="coasters">
+        <a
+          target="_blank"
+          class="card__info"
+          href="https://ceramic-gifts.com/products/green-and-gold-wild-flower-coasters"
+        >
+          <img
+            src="img/coasters.jpeg"
+            alt="Green And Gold Wild Flower Coasters"
+            class="card__img"
+          />
+          <p class="card__text card__text--item">
+            Green And Gold Wild Flower Coasters Set of 4
+          </p>
+          <p class="card__text card__text--shop">Juliet Reeves Designs</p>
+        </a>
+      </div>
+      <div class="card" id="bowls">
+        <a
+          target="_blank"
+          class="card__info"
+          href="https://www.made.com/society-of-lifestyle-pion-reactive-glaze-speckled-set-of-4-bowls-black"
+        >
+          <img
+            src="img/blackbowls.jpeg"
+            alt="Pion Set of 4 Bowls, Black Speckled Reactive Glaze"
+            class="card__img"
+          />
+          <p class="card__text card__text--item">
+            Pion Set of 4 Bowls, Black Speckled Reactive Glaze
+          </p>
+          <p class="card__text card__text--shop">Made.com</p>
+        </a>
+      </div>
+      <div class="card" id="pasta-bowls">
+        <a
+          target="_blank"
+          class="card__info"
+          href="https://www.habitat.co.uk/product/9311570?clickSR=slp:term:pasta%20bowls:7:100:1"
+        >
+          <img src="img/pastabowls.jpg" alt="Pasta Bowls" class="card__img" />
+          <p class="card__text card__text--item">
+            4 Piece Stoneware Pasta Bowls - Blue
+          </p>
+          <p class="card__text card__text--shop">Habitat</p>
+        </a>
+      </div>
+      <div class="card" id="serving-bowl-large">
+        <a
+          target="_blank"
+          href="https://www.made.com/clover-acacia-wood-serving-bowl-with-utensils-natural"
+          class="card__info"
+        >
+          <img
+            src="img/serving-bowl-large.jpeg"
+            alt="Clover
+            Acacia Wood Serving Bowl with Utensils"
+            class="card__img"
+          />
+          <p class="card__text card__text--item">
+            Clover Acacia Wood Serving Bowl with Utensils
+          </p>
+          <p class="card__text card__text--shop">Made.com</p>
+        </a>
+      </div>
+      <div class="card" id="serving-bowls-small--1">
+        <a
+          target="_blank"
+          href="https://www.oliverbonas.com/homeware/gluggle-green-earthenware-jug-304343#selection.color=16&selection.size=2260&gid=319820&pid=1"
+          class="card__info"
+        >
+          <img
+            src="img/serving-bowl-small.jpg"
+            alt="2 Smaller Serving Bowls Green Resin"
+            class="card__img"
+          />
+          <p class="card__text card__text--item">
+            2 Smaller Serving Bowls Green Resin
+          </p>
+          <p class="card__text card__text--shop">Made.com</p>
+        </a>
+      </div>
+      <div class="card" id="serving-bowls-small--2">
+        <a
+          target="_blank"
+          href="https://www.made.com/society-of-lifestyle-serveur-set-of-2-serving-bowls-green-resin"
+          class="card__info"
+        >
+          <img
+            src="img/serving-bowl-small.jpg"
+            alt="2 Smaller Serving Bowls Green Resin"
+            class="card__img"
+          />
+          <p class="card__text card__text--item">
+            2 Smaller Serving Bowls Green Resin
+          </p>
+          <p class="card__text card__text--shop">Made.com</p>
+        </a>
+      </div>
+      <div class="card" id="ramekins">
+        <a
+          target="_blank"
+          href="https://www.amazon.co.uk/Ceramic-Ramekins-Souffle-Embossed-Cupcakes/dp/B09DYQ83Q4/ref=sr_1_16?keywords=ramekins&qid=1647558368&sr=8-16&th=1"
+          class="card__info"
+        >
+          <img
+            src="img/ramekins.jpg"
+            alt="Ceramic Ramekinsn"
+            class="card__img"
+          />
+          <p class="card__text card__text--item">Ceramic Ramekins</p>
+          <p class="card__text card__text--shop">Amazon</p>
+        </a>
+      </div>
+      <div class="card" id="oven-mitt">
+        <a
+          target="_blank"
+          href="https://www.anthropologie.com/en-gb/shop/campbell-oven-mitt?category=SEARCHRESULTS&color=015&searchparams=q%3Doven%2520gloves&type=REGULAR&size=One%20Size&quantity=1"
+          class="card__info"
+        >
+          <img
+            src="img/oven-mitt.jpg"
+            alt="Campbell Oven Mitt"
+            class="card__img"
+          />
+          <p class="card__text card__text--item">
+            Campbell Oven Mitt: Color Neutral
+          </p>
+          <p class="card__text card__text--shop">Anthropologie</p>
+        </a>
+      </div>
+      <div class="card" id="bath-towel">
+        <a
+          target="_blank"
+          href="https://www.anthropologie.com/en-gb/shop/drea-bath-towel-collection?category=SEARCHRESULTS&color=014&searchparams=q%3Dtowel&type=REGULAR&quantity=1&size=BATH%20TOWEL"
+          class="card__info"
+        >
+          <img src="img/towel.jpg" alt="Drea Bath Towel" class="card__img" />
+          <p class="card__text card__text--item">
+            Drea Bath Towel: Color Neutral
+          </p>
+          <p class="card__text card__text--shop">Anthropologie</p>
+        </a>
+      </div>
+      <div class="card" id="hand-towel">
+        <a
+          target="_blank"
+          href="https://www.anthropologie.com/en-gb/shop/drea-bath-towel-collection?category=SEARCHRESULTS&color=014&searchparams=q%3Dtowel&type=REGULAR&quantity=1&size=HAND%20TOWEL"
+          class="card__info"
+        >
+          <img src="img/towel.jpg" alt="Drea Hand Towel" class="card__img" />
+          <p class="card__text card__text--item">
+            Drea Hand Towel: Color Neutral
+          </p>
+          <p class="card__text card__text--shop">Anthropologie</p>
+        </a>
+      </div>
+      <div class="card" id="bed-spread">
+        <a
+          target="_blank"
+          href="https://www.frenchconnection.com/products/velvet-bedspread-dusty-pink"
+          class="card__info"
+        >
+          <img
+            src="img/bedspread.jpg"
+            alt="Velvet Bedspread: Color Dusty Pink"
+            class="card__img"
+          />
+          <p class="card__text card__text--item">
+            Velvet Bedspread: Color Dusty Pink
+          </p>
+          <p class="card__text card__text--shop">French Connection</p>
+        </a>
+      </div>
+      <div class="card" id="throw">
+        <a
+          target="_blank"
+          href="https://www.anthropologie.com/en-gb/shop/luxe-dyed-faux-fur-throw-blanket?color=030&recommendation=pdp-rightRail-sfrectray-pdprectraysimilar&type=REGULAR&size=One%20Size&quantity=1"
+          class="card__info"
+        >
+          <img
+            src="img/throw.jpg"
+            alt="Luxe Dyed Faux Fur Throw Blanket: Colour Green"
+            class="card__img"
+          />
+          <p class="card__text card__text--item">
+            Luxe Dyed Faux Fur Throw Blanket: Colour Green
+          </p>
+          <p class="card__text card__text--shop">Anthropologie</p>
+        </a>
+      </div>
+      <div class="card" id="pouffe">
+        <a
+          target="_blank"
+          href="https://www.frenchconnection.com/products/spiced-ginger-pouffe-gold?nosto_source=cmp&nosto=6233c44f66af0f276c58c590"
+          class="card__info"
+        >
+          <img
+            src="img/pouffe.jpg"
+            alt="Spiced Ginger Pouffe"
+            class="card__img"
+          />
+          <p class="card__text card__text--item">Spiced Ginger Pouffe</p>
+          <p class="card__text card__text--shop">French Connection</p>
+        </a>
+      </div>
+      <div class="card" id="tray">
+        <a
+          target="_blank"
+          href="https://www.frenchconnection.com/products/sun-dance-wooden-tray-natural?nosto_source=cmp&nosto=6233c5c96a866428a068a544"
+          class="card__info"
+        >
+          <img
+            src="img/tray.jpg"
+            alt="Sun Dance Wooden Tray"
+            class="card__img"
+          />
+          <p class="card__text card__text--item">Sun Dance Wooden Tray</p>
+          <p class="card__text card__text--shop">French Connection</p>
+        </a>
+      </div>
+      <div class="card" id="laundry-basket">
+        <a
+          target="_blank"
+          href="https://www.ikea.com/gb/en/p/branaes-laundry-basket-with-lining-rattan-20214731/"
+          class="card__info"
+        >
+          <img
+            src="img/laundry-basket.jpg"
+            alt="BRANÄS
+        Laundry basket with lining, rattan"
+            class="card__img"
+          />
+          <p class="card__text card__text--item">
+            BRANÄS Laundry basket with lining, rattan
+          </p>
+          <p class="card__text card__text--shop">IKEA</p>
+        </a>
+      </div>
+      <div class="card" id="roomba">
+        <a
+          target="_blank"
+          href="https://www.amazon.co.uk/iRobot-R692-Robotic-Vacuum-Cleaner/dp/B088KBQ4PV/ref=sr_1_3?crid=1GI4SQU5WEY76&keywords=roomba&qid=1647603072&sprefix=roomb%2Caps%2C197&sr=8-3&th=1"
+          class="card__info"
+        >
+          <img
+            src="img/roomba.jpg"
+            alt="iRobot® Roomba® 692040 Connected Robot Vacuum"
+            class="card__img"
+          />
+          <p class="card__text card__text--item">
+            iRobot® Roomba® 692040 Connected Robot Vacuum
+          </p>
+          <p class="card__text card__text--shop">Amazon</p>
+        </a>
+      </div>
+      <div class="card" id="kitchen-bin">
+        <a
+          target="_blank"
+          href="https://www.amazon.co.uk/Display4top-Stainless-Automatic-Touchless-58LRound/dp/B085RQ792F/ref=sr_1_14?keywords=kitchen%2Bbin&qid=1647608416&sr=8-14&th=1"
+          class="card__info"
+        >
+          <img
+            src="img/bin.jpg"
+            alt="display4top Stainless Steel Automatic Bin"
+            class="card__img"
+          />
+          <p class="card__text card__text--item">
+            display4top Stainless Steel Automatic Bin
+          </p>
+          <p class="card__text card__text--shop">Amazon</p>
+        </a>
+      </div>
+      <div class="card" id="suitcase-large">
+        <a
+          target="_blank"
+          href="https://www.amazon.co.uk/Tripp-Rose-Large-Wheel-Suitcase/dp/B089P329P6/ref=bmx_dp_hn3v48go_2/259-1942863-6238515?pd_rd_w=wZNWK&pf_rd_p=bfb90308-afd0-451a-9d35-fb03f598b569&pf_rd_r=S7ATCQYJKW0T86KA1BW8&pd_rd_r=798af88b-be05-4ba4-8fa5-758dd83458cc&pd_rd_wg=pypab&pd_rd_i=B089P329P6&psc=1"
+          class="card__info"
+        >
+          <img
+            src="img/suitcase1.jpg"
+            alt="Tripp Rose Chic Large 4 Wheel Suitcase"
+            class="card__img"
+          />
+          <p class="card__text card__text--item">
+            Tripp Rose Chic Large 4 Wheel Suitcase
+          </p>
+          <p class="card__text card__text--shop">Amazon</p>
+        </a>
+      </div>
+      <div class="card" id="suitcase-small">
+        <a
+          target="_blank"
+          href="https://www.amazon.co.uk/Tripp-Blue-Cabin-Wheel-Suitcase/dp/B089P2N52H/ref=sr_1_36?crid=32HYBL66SIF3Y&keywords=tripp+suitcase&qid=1647610543&sprefix=tripp+suitcase%2Caps%2C92&sr=8-36"
+          class="card__info"
+        >
+          <img
+            src="img/suitcase2.jpg"
+            alt="Tripp Sky Blue Chic Cabin 4 Wheel Suitcase"
+            class="card__img"
+          />
+          <p class="card__text card__text--item">
+            Tripp Sky Blue Chic Cabin 4 Wheel Suitcase
+          </p>
+          <p class="card__text card__text--shop">Amazon</p>
+        </a>
+      </div>
+      <div class="card" id="clothes-dryer">
+        <a
+          target="_blank"
+          href="https://www.gardentrading.co.uk/products/folding-wooden-clothes-horse.html"
+          class="card__info"
+        >
+          <img
+            src="img/clothesdryer.jpg"
+            alt="Folding Clothes Horse"
+            class="card__img"
+          />
+          <p class="card__text card__text--item">Folding Clothes Horse</p>
+          <p class="card__text card__text--shop">gardentrading.co.uk</p>
+        </a>
+      </div>
+    </section>
+    <button class="btn btn--submit" type="submit">Mark as Purchased</button>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    font-family: "EB Garamond", serif;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 2px !important;
+    transition: transform 0.2s, opacity 0.2s, box-shadow 0.2s;
+    position: relative;
+    box-shadow: $box-shadow-btn-down;
+    text-align: center;
+    background-color: rgb(51, 51, 51);
+    color: $color-white;
+    width: 40rem;
+    height: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    //Change for the <button> element
+    border: none;
+    cursor: pointer;
+    margin-left: calc(50vw - 20rem);
+    margin-bottom: 3rem;
+    @media only screen and (max-width: 350px) {
+      width: 90vw;
+      margin-left: 5vw;
+      font-size: 1.7rem;
+      height: auto;
+    }
+  }
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: $box-shadow-btn-up;
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: $box-shadow-btn-down;
+  }
+}

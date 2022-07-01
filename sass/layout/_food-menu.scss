@@ -1,0 +1,41 @@
+.food-menu {
+  &__course {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+  &__heading,
+  &__course-info,
+  &__course-heading,
+  &__info {
+    text-align: center;
+  }
+  &__course-heading {
+    font-size: 2rem;
+    font-style: italic;
+  }
+  &__heading {
+    padding-right: 2rem;
+  }
+  &__info {
+    font-style: italic;
+    margin-top: 9rem;
+  }
+  &__btn {
+    @media only screen and (max-width: 348px) {
+      width: 90vw;
+      height: 8rem;
+    }
+    font-family: "Nunito", sans-serif;
+    font-size: 1.2rem;
+    width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6.5rem;
+    @include flex-center;
+    margin-top: 3.5rem;
+    line-height: 2.2rem;
+    height: 5rem;
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+}

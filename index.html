@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Wedding of Alex and James Stevenson</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="module" defer src="/js/index.js"></script>
+  </head>
+  <body>
+    <div class="modal">
+      <div class="modal__content modal__content--dietary">
+        <span class="modal__close">&times;</span>
+        <p class="modal__text modal__text--top">
+          Please let us know of any dietary requirements you may have using the
+          form below.
+        </p>
+
+        <form action="post" class="dietary-form">
+          <div class="dietary-form__group dietary-form__group--name">
+            <label for="full-name">Full name:</label>
+            <input
+              class="dietary-form__input dietary-form__input--text"
+              type="text"
+              id="full-name"
+              name="full-name"
+              placeholder="First and Last"
+              required=""
+              pattern="^\S+\s\S+$"
+              oninvalid="this.setCustomValidity('Please enter first name and last name.')"
+            />
+          </div>
+          <div class="dietary-form__group dietary-form__group--requirements">
+            <label class="dietary-form__label" for="dietary"
+              >Dietary Requirements:</label
+            >
+            <textarea
+              class="dietary-form__input dietary-form__input--textarea"
+              id="dietary"
+              name="dietary"
+              placeholder="Enter your dietary requirements here"
+              required
+            ></textarea>
+          </div>
+          <button class="btn modal__btn dietary-form__btn">Confirm</button>
+        </form>
+      </div>
+    </div>
+    <header class="header header--main">
+      <img
+        src="img/header-img.jpg"
+        alt="Illustration of Foliage"
+        class="header__img header__img--main"
+      />
+      <div class="header__titles">
+        <h1 class="header__title header__title--intro u-italic">
+          The Wedding of
+        </h1>
+        <h1 class="header__title header__title--names">
+          <span class="header__title-name">Alexandra Dover </span>
+          <span class="header__title-name">& </span>
+          <span class="header__title-name">James Stevenson</span>
+        </h1>
+        <h1 class="header__title header__title--date">Sunday 24th July 2022</h1>
+        <h1 class="header__title header__title--location">
+          The Balmoral Hotel, Edinburgh
+        </h1>
+        <h1 class="header__title header__title--dress-code">
+          Formal attire or black tie optional
+        </h1>
+      </div>
+    </header>
+    <hr />
+    <section class="food-menu-link">
+      <h1 class="food-menu__heading">Menu</h1>
+      <div class="food-menu__course">
+        <h2 class="food-menu__course-heading">Starter</h2>
+        <p class="food-menu__course-info">
+          Young carrot, orange and ginger soup, roasted seeds, Highland rapeseed
+          oil
+        </p>
+      </div>
+      <div class="food-menu__course">
+        <h2 class="food-menu__course-heading">Main</h2>
+        <p class="food-menu__course-info">
+          Grilled sea bass, basil infused grains, charred artichoke, sun dried
+          tomato, Kalamata olives and salsa verde
+        </p>
+      </div>
+      <div class="food-menu__course">
+        <h2 class="food-menu__course-heading">Dessert</h2>
+        <p class="food-menu__course-info">
+          Dark chocolate financier, warm salted caramel sauce
+        </p>
+      </div>
+
+      <p class="food-menu__info">
+        If you have any dietry requirements such a needing a vegan, vegetarian
+        or gluten free option please let us know
+      </p>
+      <button class="food-menu__btn btn">
+        Notify us of diatry requirmenents
+      </button>
+    </section>
+    <hr />
+    <section class="itinerary">
+      <h1 class="itinerary__heading">Itinerary</h1>
+      <ul class="itinery__list">
+        <li class="itinerary__text">
+          <span class="bullet">&#8226;</span>
+          <span>Arrival at 1.50pm</span>
+        </li>
+        <li class="itinerary__text">
+          <span class="bullet">&#8226;</span>
+          <span>Ceremony begins at 2pm</span>
+        </li>
+        <li class="itinerary__text">
+          <span class="bullet">&#8226;</span>
+          <span> Speeches and Wedding Breakfast begins at 3.30pm </span>
+        </li>
+        <li class="itinerary__text">
+          <span class="bullet">&#8226;</span>
+          <span>
+            Band, The Sleekit Beesties will be playing from 8pm till 12pm
+            starting with a short Celidh
+          </span>
+        </li>
+      </ul>
+    </section>
+    <hr />
+    <section class="location">
+      <h1 class="location__heading">Location</h1>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8936.477246095703!2d-3.2069793586694653!3d55.94730395506448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c7565b71bd99%3A0x1228a6e5401d2d97!2sThe%20Balmoral!5e0!3m2!1sen!2suk!4v1647455801256!5m2!1sen!2suk"
+        class="map"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+    <hr />
+    <section class="travel">
+      <h1 class="travel__heading">Travelling by Rail</h1>
+      <p class="travel__text text">
+        Edinburgh Waverly Station is next door to the Balmoral hotel. When
+        leaving the station ensure you exit at the Princes street exit. On
+        exiting the station turn right. The Balmoral is just a few steps down
+        the road.
+      </p>
+      <h1 class="travel__heading">Travelling by Plane</h1>
+      <p class="travel__text text">
+        Edinburgh Airport is located west of the city. The tram and buses 100
+        Airlink or X18 take you within a 5 minute walk of the Balmoral. Get off
+        at Princes street and continue to walk down this road. The Balmoral
+        Hotel is last building on the right hand side.
+      </p>
+    </section>
+    <hr />
+    <section class="hotels">
+      <h1 class="hotels__heading">Hotels</h1>
+      <p class="hotels__text text">
+        If you are looking for a hotel in the city center, there are many within
+        walking distance of the Balmoral. Cheaper options include:
+      </p>
+      <ul class="hotels__list">
+        <li>
+          <a
+            href="https://www.google.com/maps/place/Travelodge+Edinburgh+Central+Waterloo+Place/@55.9537288,-3.1897879,17z/data=!3m1!4b1!4m8!3m7!1s0x4887c79a66139ca1:0x8b4bd47e452b4467!5m2!4m1!1i2!8m2!3d55.9537351!4d-3.1875973"
+            class="hotels__link"
+            >Travelodge: Edinburgh Central Waterloo Place</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.google.com/maps/place/Travelodge+Edinburgh+Central+Princes+Street/@55.9532845,-3.1945429,17z/data=!3m1!4b1!4m8!3m7!1s0x4887c78fd51b8bfd:0x916dee128ceacef7!5m2!4m1!1i2!8m2!3d55.9532845!4d-3.1923489"
+            class="hotels__link"
+            >Travelodge: Edinburgh Central Princes Street</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.google.com/maps/place/Travelodge+Edinburgh+Central/@55.9498101,-3.1926717,15z/data=!4m13!1m6!2m5!1sTravelodge+Edinburgh+Central!5m3!5m2!4m1!1i2!3m5!1s0x4887c79a66139ca1:0x1e273d835470bf73!5m2!4m1!1i2!15sChxUcmF2ZWxvZGdlIEVkaW5idXJnaCBDZW50cmFsIgOIAQFaHiIcdHJhdmVsb2RnZSBlZGluYnVyZ2ggY2VudHJhbJIBBWhvdGVs"
+            class="hotels__link"
+            >Travelodge: Edinburgh Central</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.google.com/maps/place/Premier+Inn+Edinburgh+City+Centre+Royal+Mile+hotel/@55.9514269,-3.1861271,17z/data=!3m1!4b1!4m8!3m7!1s0x4887c75d8fac8ab5:0x919ddded849d94e5!5m2!4m1!1i2!8m2!3d55.9514269!4d-3.1839331"
+            class="hotels__link"
+            >Premier Inn: Edinburgh City Centre Royal Mile hotel</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.google.com/maps/place/Premier+Inn+Edinburgh+City+Centre+(York+Place%2FSt+James+Quarter)+hotel/@55.9567278,-3.1915202,17z/data=!3m1!4b1!4m8!3m7!1s0x4887c78dd02fa9af:0x46a7980fcaa2d684!5m2!4m1!1i2!8m2!3d55.9567278!4d-3.1893262"
+            class="hotels__link"
+            >Premier Inn: Edinburgh City Centre York Place St James Quarter</a
+          >
+        </li>
+      </ul>
+      <p class="hotels__text text">
+        There are also plenty of mid-range to high-end options within walking
+        distance from the Balmoral. The Edinburgh Festival starts around the
+        beginning of August so hotels do get booked up quite quickly around this
+        time.
+      </p>
+    </section>
+    <hr />
+    <section class="message">
+      <p class="message__text text"></p>
+
+      <p class="message__text text">
+        There is absolutely no expectation to bring wedding gifts. We would just
+        love it if you are able to come. If you are wanting to give a gift and
+        are looking for ideas, here is a link to a
+        <a href="/gift-list.html" class="message__link">short ideas list</a>.
+      </p>
+      <p class="message__text text">
+        I'll keep this page updated with any new information. Of course, give
+        either of us a text if we've missed anything or you have any questions.
+      </p>
+      <p class="message__text text">
+        We would appreciate it if you could RSVP as soon as possible so we can
+        finalise numbers with the Balmoral.
+      </p>
+      <p class="message__text text">
+        We both really look forward to seeing you then!
+      </p>
+      <p class="text message__text message__text--signoff">James and Alex</p>
+    </section>
+  </body>
+</html>

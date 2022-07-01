@@ -1,0 +1,20 @@
+.flex-group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 2vw;
+  @media only screen and (max-width: 1093px) {
+    margin: 2.75vw;
+  }
+  @media only screen and (max-width: 837px) {
+    margin: 3vw;
+  }
+  &--main {
+    width: 96vw;
+    max-width: 100vw;
+  }
+  &--modal {
+    width: 76vw;
+    max-width: 80vw;
+  }
+}

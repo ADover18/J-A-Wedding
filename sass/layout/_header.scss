@@ -1,0 +1,67 @@
+.header {
+  &--main {
+    height: 100vh;
+  }
+  &--gift-list {
+    min-height: 80vh;
+  }
+  img {
+    width: 100vw;
+    height: 35vh;
+    object-fit: cover;
+    object-position: 50% 100%;
+    margin-bottom: 2.5rem;
+    &--index {
+      margin-bottom: 3rem;
+    }
+  }
+  &__titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 58vh;
+    text-align: center;
+  }
+  &__title {
+    &--intro {
+      // font-style: italic;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    &--names {
+      font-size: 4rem;
+      @media only screen and (max-width: 705px) {
+        display: flex;
+        flex-direction: column;
+      }
+      margin-bottom: 2rem;
+    }
+    &--location {
+      margin-bottom: 0.5rem;
+    }
+    &--dress-code {
+      font-size: 2.3rem;
+      margin-bottom: 1rem;
+    }
+    &-name {
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+    &--date {
+      font-size: 2.4rem;
+    }
+    &--location {
+      font-size: 2.4rem;
+    }
+  }
+  &__gift-info {
+    max-width: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 2rem;
+  }
+}

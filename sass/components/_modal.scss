@@ -1,0 +1,110 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  &__content {
+    z-index: 1000;
+    background-color: #fefefe;
+    margin: 3% auto;
+    border: 1px solid #888;
+    width: 80%;
+    min-width: 310px;
+    font-size: 2rem;
+    position: relative;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 6px;
+    padding-bottom: 3rem;
+
+    &--dietary {
+      padding: 5%;
+    }
+  }
+  &__text {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    @media only screen and (max-width: 705px) {
+      margin-top: 5rem;
+    }
+
+    &--top {
+      font-weight: 500;
+      font-size: 2.5rem;
+      font-family: "EB Garamond", serif;
+    }
+    &--msg {
+      font-style: italic;
+    }
+  }
+  &__close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 3rem;
+    width: 3rem;
+    font-size: 5rem;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    line-height: 30px;
+    cursor: pointer;
+    color: rgb(148, 148, 148);
+    &:hover {
+      color: rgb(51, 51, 52);
+    }
+  }
+  &__btn {
+    z-index: 100000000000000000000;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5rem;
+    @media only screen and (max-width: 410px) {
+      width: 75%;
+      margin-left: 12.5%;
+    }
+    font-family: "EB Garamond", serif;
+  }
+  .card {
+    width: calc(7.9 / 10 * 20vw);
+    height: 22vw;
+    margin: 1.6vw;
+
+    @media only screen and (max-width: 1093px) {
+      width: 20.8vw;
+      height: 25vw;
+      margin: 2.2vw;
+    }
+    @media only screen and (max-width: 880px) {
+      width: 32.8vw;
+      height: 32.8vw;
+      margin: 2.4vw;
+    }
+
+    @media only screen and (max-width: 520px) {
+      height: 40vw;
+    }
+    @media only screen and (max-width: 450px) {
+      width: 68vw;
+      height: 45vw;
+      margin: 6vw;
+    }
+    @media only screen and (max-width: 350px) {
+      height: 60vw;
+    }
+  }
+  p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    @media only screen and (max-width: 610px) {
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
+  }
+}
