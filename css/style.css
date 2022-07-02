@@ -48,6 +48,18 @@ h5 {
   text-transform: uppercase;
   letter-spacing: 8px; }
 
+.btn--smaller-text {
+  line-height: 2.2rem !important;
+  font-family: "Nunito", sans-serif !important;
+  font-size: 1.5rem !important;
+  letter-spacing: 0.2rem !important; }
+
+.nunito-font {
+  font-family: "Nunito", sans-serif !important; }
+
+.btn--taller {
+  min-height: 8rem; }
+
 .btn, .btn:link, .btn:visited {
   font-family: "EB Garamond", serif;
   font-size: 2.2rem;
@@ -340,6 +352,8 @@ h5 {
       .modal p {
         padding-left: 0rem;
         padding-right: 0rem; } }
+  .modal__confirm-block {
+    display: none; }
 
 hr {
   color: #78716c;
@@ -440,9 +454,9 @@ hr {
   height: 5rem;
   padding-left: 3rem !important;
   padding-right: 3rem !important; }
-  @media only screen and (max-width: 348px) {
+  @media only screen and (max-width: 400px) {
     .food-menu__btn {
-      width: 90vw;
+      width: 70vw;
       height: 8rem; } }
   .food-menu__btn {
     display: flex;

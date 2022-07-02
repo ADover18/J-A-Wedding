@@ -22,39 +22,50 @@
     <div class="modal">
       <div class="modal__content modal__content--dietary">
         <span class="modal__close">&times;</span>
-        <p class="modal__text modal__text--top">
-          Please let us know of any dietary requirements you may have using the
-          form below.
-        </p>
-
-        <form action="post" class="dietary-form">
-          <div class="dietary-form__group dietary-form__group--name">
-            <label for="full-name">Full name:</label>
-            <input
-              class="dietary-form__input dietary-form__input--text"
-              type="text"
-              id="full-name"
-              name="full-name"
-              placeholder="First and Last"
-              required=""
-              pattern="^\S+\s\S+$"
-              oninvalid="this.setCustomValidity('Please enter first name and last name.')"
-            />
-          </div>
-          <div class="dietary-form__group dietary-form__group--requirements">
-            <label class="dietary-form__label" for="dietary"
-              >Dietary Requirements:</label
-            >
-            <textarea
-              class="dietary-form__input dietary-form__input--textarea"
-              id="dietary"
-              name="dietary"
-              placeholder="Enter your dietary requirements here"
-              required
-            ></textarea>
-          </div>
-          <button class="btn modal__btn dietary-form__btn">Confirm</button>
-        </form>
+        <div class="modal__form-block">
+          <p class="modal__text modal__text--top">
+            Please let us know of any dietary requirements you may have using
+            the form below.
+          </p>
+          <form action="post" class="dietary-form">
+            <div class="dietary-form__group dietary-form__group--name">
+              <label for="full-name">Full name:</label>
+              <input
+                class="dietary-form__input dietary-form__input--text"
+                type="text"
+                id="full-name"
+                name="full-name"
+                placeholder="First and Last"
+                required=""
+                pattern="^\S+\s\S+$"
+                oninvalid="this.setCustomValidity('Please enter first name and last name.')"
+              />
+            </div>
+            <div class="dietary-form__group dietary-form__group--requirements">
+              <label class="dietary-form__label" for="dietary"
+                >Dietary Requirements:</label
+              >
+              <textarea
+                class="dietary-form__input dietary-form__input--textarea"
+                id="dietary"
+                name="dietary"
+                placeholder="Enter your dietary requirements here"
+                required
+              ></textarea>
+            </div>
+            <button class="btn modal__btn dietary-form__btn btn--smaller-text">
+              Confirm
+            </button>
+          </form>
+        </div>
+        <div class="modal__confirm-block">
+          <p class="modal__text--confirm modal__text"></p>
+          <button
+            class="btn modal__btn dietary-form__btn dietary-form__btn--new-entry food-menu__btn btn--taller"
+          >
+            Inform us of another guests dietary requirements.
+          </button>
+        </div>
       </div>
     </div>
     <header class="header header--main">
@@ -106,11 +117,11 @@
       </div>
 
       <p class="food-menu__info">
-        If you have any dietry requirements such a needing a vegan, vegetarian
+        If you have any dietary requirements such a needing a vegan, vegetarian
         or gluten free option please let us know
       </p>
-      <button class="food-menu__btn btn">
-        Notify us of diatry requirmenents
+      <button class="open-modal-btn food-menu__btn btn">
+        Notify us of dietary requirements
       </button>
     </section>
     <hr />
