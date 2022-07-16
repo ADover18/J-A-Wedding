@@ -32,6 +32,9 @@ section {
     &__text {
       list-style: none;
     }
+    &__heading {
+      padding-left: 0;
+    }
   }
   .travel {
     &__text:not(:last-child) {

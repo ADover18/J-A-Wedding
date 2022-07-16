@@ -492,6 +492,8 @@ section {
     max-width: 80rem; }
   section .itinerary__text {
     list-style: none; }
+  section .itinerary__heading {
+    padding-left: 0; }
   section .travel__text:not(:last-child) {
     margin-bottom: 6rem; }
   section .hotels__list {
