@@ -363,6 +363,9 @@ hr {
   margin-left: 10vw;
   margin-right: 10vw; }
 
+.itinerary {
+  text-align: center; }
+
 .header--main {
   height: 100vh; }
 
@@ -486,11 +489,9 @@ section {
     padding-left: 2rem;
     padding-right: 2rem; }
   section .itinerary__list {
-    list-style: none;
     max-width: 80rem; }
   section .itinerary__text {
-    display: flex;
-    flex-direction: row; }
+    list-style: none; }
   section .travel__text:not(:last-child) {
     margin-bottom: 6rem; }
   section .hotels__list {
