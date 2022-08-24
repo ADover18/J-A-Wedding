@@ -25,6 +25,13 @@ section {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+  .photographs {
+    &__link {
+      // text-decoration: underline;
+      border-bottom: 1px solid $color-black;
+      padding: 1px;
+    }
+  }
   .itinerary {
     &__list {
       max-width: 80rem;

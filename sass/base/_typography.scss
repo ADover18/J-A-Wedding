@@ -23,4 +23,9 @@ h5 {
   letter-spacing: 8px;
 }
 
-
+.title--photographs {
+  font-size: 6rem;
+  @media only screen and (max-width: 500px) {
+    font-size: 4rem;
+  }
+}

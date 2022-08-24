@@ -48,6 +48,12 @@ h5 {
   text-transform: uppercase;
   letter-spacing: 8px; }
 
+.title--photographs {
+  font-size: 6rem; }
+  @media only screen and (max-width: 500px) {
+    .title--photographs {
+      font-size: 4rem; } }
+
 .btn--smaller-text {
   line-height: 2.2rem !important;
   font-family: "Nunito", sans-serif !important;
@@ -152,6 +158,21 @@ h5 {
       margin: 7.5vw;
       margin-top: 4vw;
       margin-bottom: 4vw; } }
+  .card--photo {
+    width: 28vw;
+    height: 28vw; }
+    .card--photo:hover {
+      cursor: pointer; }
+    @media only screen and (max-width: 1093px) {
+      .card--photo {
+        width: 44vw;
+        height: 44vw;
+        margin: 2vw; } }
+    @media only screen and (max-width: 750px) {
+      .card--photo {
+        width: 90vw;
+        height: 90vw;
+        margin: 2vw; } }
   .card__img {
     object-fit: contain;
     margin-top: 5%;
@@ -160,6 +181,8 @@ h5 {
     margin-bottom: 1rem;
     width: 90%;
     height: 45%; }
+    .card__img--photo {
+      height: 88%; }
   .card__purchased {
     z-index: 100;
     position: absolute;
@@ -381,6 +404,13 @@ hr {
   .header img--index {
     margin-bottom: 3rem; }
 
+.header--photographs {
+  height: 15vh;
+  width: 100vw; }
+  .header--photographs img {
+    height: 15vh;
+    width: 100vw; }
+
 .header__titles {
   display: flex;
   flex-direction: column;
@@ -488,6 +518,9 @@ section {
     margin-bottom: 2rem;
     padding-left: 2rem;
     padding-right: 2rem; }
+  section .photographs__link {
+    border-bottom: 1px solid #000;
+    padding: 1px; }
   section .itinerary__list {
     max-width: 80rem; }
   section .itinerary__text {
