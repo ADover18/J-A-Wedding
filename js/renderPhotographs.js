@@ -13,8 +13,9 @@ for (let i = 1; i < 546; i++) {
   photoElement.setAttribute("class", "card card--photo");
   photoElement.setAttribute("id", `photo-${i}`);
   photoElement.innerHTML = `<img
-                                src="img/photographs/Image-${i}.jpg"
-                                class="card__img card__img--photo"
+                                data-src="img/photographs/Image-${i}.jpg"
+                                src="img/photographs-small/Image-${i}.jpg"
+                                class="card__img card__img--photo lazy-image"
                                 download
                             />`;
   photoGroupSection.appendChild(photoElement);

@@ -66,6 +66,9 @@ h5 {
 .btn--taller {
   min-height: 8rem; }
 
+.lazy-image {
+  filter: blur(2px); }
+
 .btn, .btn:link, .btn:visited {
   font-family: "EB Garamond", serif;
   font-size: 2.2rem;

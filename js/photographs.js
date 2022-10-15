@@ -13,3 +13,4 @@ Fancybox.bind("[data-fancybox]", {
     ],
   },
 });
+
