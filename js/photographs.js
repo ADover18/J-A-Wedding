@@ -1,16 +1,15 @@
-import { Fancybox } from "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.esm.js";
+import { Fancybox } from "https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.esm.js";
 
 Fancybox.bind("[data-fancybox]", {
   Toolbar: {
     display: [
       { id: "counter", position: "center" },
-      { id: "download", position: "right" },
-      { id: "zoom", position: "right" },
-      { id: "slideshow", position: "right" },
-      { id: "fullscreen", position: "right" },
-      { id: "thumbs", position: "right" },
+      { id: "slideshow", position: "left" },
+      { id: "fullscreen", position: "left" },
+      { id: "thumbs", position: "left" },
+      { id: "zoom", position: "left" },
+      { id: "download", position: "left" },
       { id: "close", position: "right" },
     ],
   },
 });
-
